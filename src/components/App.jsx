@@ -1,10 +1,11 @@
 import "./App.css";
-import { Profile } from "./Profile";
+import { Profile } from "./profile/Profile";
+import userData from "../userData.json";
 
 const App = () => {
   return (
     <div>
-      <Profile />
+      <Profile info={userData} />
     </div>
   );
 };

@@ -1,0 +1,35 @@
+.friends-list {
+  margin: 0 auto;
+  max-width: 768px;
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.friends-item {
+  background-color: #fff;
+  width: 72px;
+  padding: 16px 8px;
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+.friends-img {
+  margin: 0 auto;
+}
+
+.friends-name {
+  color: #000;
+  margin-top: 8px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.friends-is-online {
+  color: green;
+}
+
+.friends-offline {
+  color: red;
+}

@@ -1,4 +1,4 @@
-import "./Profile.css";
+import style from "./Profile.module.css";
 
 export const Profile = ({
   info: {
@@ -10,27 +10,27 @@ export const Profile = ({
   },
 }) => {
   return (
-    <div className="profile-box">
+    <div className={style.profileBox}>
       <div>
-        <img className="main-image" src={avatar} alt="User avatar" />
-        <p className="name-title">{username}</p>
-        <p className="nickname-title">@{tag}</p>
-        <p className="location">{location}</p>
+        <img className={style.mainImage} src={avatar} alt="User avatar" />
+        <p className={style.nameTitle}>{username}</p>
+        <p className={style.nicknameTitle}>@{tag}</p>
+        <p className={style.location}>{location}</p>
       </div>
-      <ul className="stats-list">
-        <li className="stats-list-item">
-          <span className="stats-list-title">Followers</span>
-          <span className="stats-list-amount">{followers}</span>
+      <ul className={style.statsList}>
+        <li className={style.listItem}>
+          <span className={style.listTitle}>Followers</span>
+          <span className={style.listAmount}>{followers}</span>
         </li>
 
-        <li className="stats-list-item">
-          <span className="stats-list-title">Views</span>
-          <span className="stats-list-amount">{views}</span>
+        <li className={style.listItem}>
+          <span className={style.listTitle}>Views</span>
+          <span className={style.listAmount}>{views}</span>
         </li>
 
-        <li className="stats-list-item">
-          <span className="stats-list-title">Likes</span>
-          <span className="stats-list-amount">{likes}</span>
+        <li className={style.listItem}>
+          <span className={style.listTitle}>Likes</span>
+          <span className={style.listAmount}>{likes}</span>
         </li>
       </ul>
     </div>

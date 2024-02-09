@@ -1,35 +1,42 @@
-.friends-list {
+.list {
   margin: 0 auto;
-  max-width: 768px;
+  width: 520px;
   margin-top: 48px;
   display: flex;
   justify-content: center;
   gap: 8px;
 }
 
-.friends-item {
+.item {
   background-color: #fff;
-  width: 72px;
+  width: 80px;
   padding: 16px 8px;
   border: 2px solid #000;
   border-radius: 8px;
 }
 
-.friends-img {
+.friendsImg {
   margin: 0 auto;
 }
 
-.friends-name {
+.friendsName {
   color: #000;
   margin-top: 8px;
   font-size: 24px;
   text-align: center;
 }
 
-.friends-is-online {
+.onlineInfo {
+  font-size: 20px;
+  color: #000;
+}
+
+.friendsIsOnline {
+  composes: onlineInfo;
   color: green;
 }
 
-.friends-offline {
+.friendsIsOffline {
+  composes: onlineInfo;
   color: red;
 }
